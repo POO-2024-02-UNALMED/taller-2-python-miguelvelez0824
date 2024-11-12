@@ -22,7 +22,7 @@ class Auto:
     def cantidadAsientos(self):
         numasientos = 0
         for i in range(0,len(self.Asientos)):
-            if self.Asientos[i] is not None:
+            if self.Asientos[i] != None:
                 numasientos +=1
         return numasientos
     
