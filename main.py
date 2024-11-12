@@ -22,8 +22,8 @@ class Auto:
     def cantidadAsientos(self):
         numasientos = 0
         for i in self.asientos:
-            if isinstance(i, Asiento):
-                numasientos += 1
+            if i is not None:
+                numasientos +=1
         return numasientos
     
     def verificarIntegridad(self):
